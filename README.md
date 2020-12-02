@@ -1,2 +1,2 @@
 # looping
-a repo for loops just for practice
+a repo for loops just for practice. The "for" loop.
