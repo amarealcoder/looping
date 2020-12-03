@@ -35,14 +35,17 @@ function findSeat() {
 
       // Prompt the user to accept the seat
       var accept = confirm("Seat " + (i + 1) + " is available. Accept?");
-      
+      if (accept){
+      // The user accepted the seat so break the loop
+        break;
+      }
       }
       if (!accept) {
         // The user rejected the seat, so clear the seat selection and keep looking
         selSeat = -1;
         document.getElementById("seat" + i).src = "seat_avail.png";
         document.getElementById("seat" + i).alt = "Available seat";
+      
       }
     }
-  }
 }
