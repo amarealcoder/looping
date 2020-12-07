@@ -23,33 +23,6 @@ function findSeat() {
     selSeat = -1;
     initSeats();
   }
-
-  // Search through all the seats for availability
-  // for (var i = 0; i < seats.length; i++) {
-  //   // See if the current seat is available
-  //   if (seats[i]) {
-  //     // Set the seat selection and update the appearance of the seat
-  //     selSeat = i;
-  //     document.getElementById("seat" + i).src = "seat_select.png";
-  //     document.getElementById("seat" + i).alt = "Your seat";
-
-  //     // Prompt the user to accept the seat
-  //     var accept = confirm("Seat " + (i + 1) + " is available. Accept?");
-  //     if (accept){
-  //     // The user accepted the seat so break the loop
-  //       break;
-  //     }
-  //     }
-  //     if (!accept) {
-  //       // The user rejected the seat, so clear the seat selection and keep looking
-  //       selSeat = -1;
-  //       document.getElementById("seat" + i).src = "seat_avail.png";
-  //       document.getElementById("seat" + i).alt = "Available seat";
-      
-  //     }
-  //   }
-
-  
   // Search through all the seats for availability (This function is set to find three vacant seats in a row)
   for (var i = 0; i < seats.length; i++) {
     // See if the current seat plus the next two seats are available
@@ -83,4 +56,3 @@ function findSeat() {
   }
 }
   
-
